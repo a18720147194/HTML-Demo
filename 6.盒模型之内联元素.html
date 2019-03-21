@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>盒模型之内联元素</title>
+		<style type="text/css">
+			div{
+				width: 100px;
+				height: 100px;
+				background-color: yellowgreen;
+			}
+			span{
+				background-color: red;
+				/*内联元素不能设置width和height
+				width: 100px;
+				height: 100px;*/
+			}
+			.a{
+				/*内联元素支持水平方向内边距和边框
+				垂直方向的不会影响布局
+				外边距只支持水平方向*/
+				padding: 40px;
+				border: 3px blue solid;
+				margin: 10px;
+				
+			}
+			/*水平方向的外边距不会重叠  是求和*/
+			.b{
+				margin-left: 1px;
+			}
+		</style>
+	</head>
+	<body>
+		<span class="a">我是a级span</span>
+		<span class="b">我是b级span</span>
+		<div></div>
+	</body>
+</html>

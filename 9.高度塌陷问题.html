@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*w3c标准 页面中元素有一个隐含属性
+			Block Formatting Context
+			简称BFC  开启后 将有如下特点:
+				1.父元素的锤直外边距不会和子元素重叠
+				2.开启bfc的元素不会被浮动元素所覆盖
+				3.开启bfc的元素可以包含浮动的子元素
+				
+			如何开启bfc
+				1.设置元素浮动
+				2.设置元素绝对定位
+				3.设置元素为inline-block
+				4.将元素的overflow设为非visible的值
+				推荐使用4设置为hidden是副作用最小的开启bfc方法
+				
+			但是IE6及以不支持  bfc ie6中该属性叫hasLayout
+			其中最简单副作用最小的是zoom:1;
+			zoom是放大元素倍数
+			
+			* */
+				
+			.a{
+				border: 10px red solid;
+				overflow: hidden;
+			}
+			.aa{
+				width: 100px;
+				height: 100px;
+				background: skyblue;
+				float: left;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="a">
+			<div class="aa"></div>
+		</div>
+	</body>
+</html>

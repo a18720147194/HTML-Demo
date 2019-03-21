@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>overflow</title>
+		<style type="text/css">
+			/*overflow:
+				visible,默认 不会对溢出处理,元素会在父元素以外位置显示
+				hidden,溢出内容会被修剪  不显示
+				scroll,添加滚动条 不论是否溢出
+				auto , 根据需求自动处理*/
+			.a{
+				width: 200px;
+				height: 200px;
+				background-color: blue;
+				overflow:auto;
+			}
+			.b{
+				width: 100px;
+				height: 500px;
+				background-color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="a">
+			<div class="b"></div>
+		</div>
+	</body>
+</html>

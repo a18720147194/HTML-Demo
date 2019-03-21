@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>盒模型</title>
+		<style type="text/css">
+			/*垂直方向外边距会重叠*/
+			
+			/*去除浏览器的默认样式*/
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.a{
+				/*width和height设置的是内容大小*/
+				width: 100px;
+				height: 100px;
+				background-color: red;/*背景会延伸到内边距*/
+				
+				/*大部分浏览器都有wigth color 默认值，
+				 * style的默认值为none无法显示
+				 * 简写没有顺序要求*
+				 * border:10px blue solid;
+				 * border一指定就是四个边 
+				 * 也可分top right制定
+				*/
+				border-width: 10px;
+				border-color:green;
+				border-style: solid;
+				
+				padding: 10px;/*内边距*/
+				
+				/*外边距 与其他元素的最短距离
+				 * 可以设置为负数  反方向移动    有重叠效果
+				 auto只能设置right 和left ，设置垂直时为0，
+				 单独设置left或right时为为最大值
+				 同时设置时为水平居中
+				 margin:0 auto;  */
+				margin: 30px;
+			}
+			
+			/*aa显示的是内容*/
+			.aa{
+				width:100%;
+				height: 100%;
+				background-color:black;
+			}
+			
+			.b{
+				width: 100px;
+				height: 100px;
+				background-color: orange;
+
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="a">
+			<div class="aa"></div>
+		</div>
+		<div class="b"></div>
+	</body>
+</html>

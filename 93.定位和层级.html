@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*当元素的position 属性设为非static时 开启了定位
+			 	relative：相对定位
+			 			相对于原位置进行定位   会使元素提升一个层级
+			 	absolute：绝对定位
+			 			开启后如果不设置偏移量则不会发生位置变化
+			 			是相对于离他最近的开启了定位的祖先元素进行定位
+			 			如果所有祖先元素都没开启定位 则相对于浏览器窗口定位
+			 			绝对定位也会提升一个层级  但会使元素脱离文档流 变成块元素
+			 	fixed：固定定位
+			 			是绝对定位的一种    但永远相对于浏览器窗口定位  （小广告）*/
+			 			
+			 			
+			 /*通过z-index设置元素层级   越高越优先显示
+				  没有开启定位的元素不能使用z-index
+				  父元素不会盖住子元素*/
+			.box1{
+				widows: 200px;
+				height: 200px;
+				background-color: red;
+			}
+			.box2{
+				widows: 200px;
+				height: 200px;
+				background-color: yellowgreen;
+			}
+			.box3{
+				widows: 200px;
+				height: 200px;
+				background-color: skyblue;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+	</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*基本没有副作用 所有浏览器兼容
+			 *  但是会添加多余的结构
+			 * w3c推荐的解决方案*/
+			.a{
+				border: red 1px solid;	
+			}
+			.a1{
+				width: 100px;
+				height: 100px;
+				background-color: skyblue;
+				float: left;
+			}
+			.a2{
+				clear: both;
+			}
+			/*after伪类添加块元素
+			 * .a:after{
+				display: block;
+				clear: both;
+			}*/
+		</style>
+	</head>
+	<body>
+		<div class="a">
+			<div class="a1"></div>
+			<div class="a2"></div>
+		</div>
+	</body>
+</html>

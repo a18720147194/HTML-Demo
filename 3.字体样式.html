@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>字体样式</title>
+		<style type="text/css">
+			.p1{
+				font-size: 20px;
+				font-family: "微软雅黑";
+				font-style: italic;
+				font-variant: small-caps;
+				font-weight: bold;
+			}
+			
+			/*简写时(style,variant,weight)可选必须写在开头 且无序
+			 * family必须写在最后, size在family前面，必须写
+			 * line-height可选   不选时设为默认值*/
+			.p2{
+				font: italic small-caps bold 20px "微软雅黑";
+			}
+		</style>
+	</head>
+	<body>
+		<p class="p1">我是第一个段落aa</p>
+		<p class="p2">我是第二个段落bb</p>		
+	</body>
+</html>
