@@ -1,0 +1,32 @@
+<html>
+<body>
+<!--方法一 -->
+<video width="320" height="240" controls autoplay>
+<source src="E:\web\配件\movie.ogg" type="video/ogg">
+
+</video>
+<!-- 方法二-->
+<embed width="320" height="240" src="E:\web\配件\movie.ogg">
+ 
+<!-- 方法三 -->
+  <object data="E:\web\配件\movie.ogg" width="320" height="240"></object>
+
+
+</body>
+</html>
+
+<!--
+同时使用多种
+<body>
+
+<video width="320" height="240" controls autoplay>
+  <source src="/statics/demosource/movie.ogg" type="video/ogg">
+  <source src="/statics/demosource/movie.mp4" type="video/mp4">
+  <source src="/statics/demosource/movie.webm" type="video/webm">
+  <object data="/statics/demosource/movie.mp4" width="320" height="240">
+    <embed width="320" height="240" src="/statics/demosource/movie.swf">
+  </object>
+</video>
+
+</body>
+-->
